@@ -6,13 +6,13 @@ int main(){
     int result;
     bool possible = false;
     cin >> a >> b >> result;
-    
-    if(a && b == result){
+    bool bo = (result ? 1 : 0);
+    if((a && b) == bo){
         cout << "AND" << endl;
         possible = true;
     }
     
-    if(a || b == result){
+    if((a || b) == bo){
         cout << "OR" << endl;
         possible = true;
     }
